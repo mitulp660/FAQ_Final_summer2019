@@ -194,38 +194,42 @@
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="52" parent="13" name="email">
+    <column id="52" parent="13" name="pic">
       <Position>3</Position>
       <DataType>varchar|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="53" parent="13" name="email_verified_at">
+    <column id="53" parent="13" name="email">
       <Position>4</Position>
-      <DataType>datetime|0s</DataType>
-    </column>
-    <column id="54" parent="13" name="password">
-      <Position>5</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="55" parent="13" name="remember_token">
+    <column id="54" parent="13" name="email_verified_at">
+      <Position>5</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <column id="55" parent="13" name="password">
       <Position>6</Position>
       <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="56" parent="13" name="created_at">
+    <column id="56" parent="13" name="remember_token">
       <Position>7</Position>
-      <DataType>datetime|0s</DataType>
+      <DataType>varchar|0s</DataType>
     </column>
-    <column id="57" parent="13" name="updated_at">
+    <column id="57" parent="13" name="created_at">
       <Position>8</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <index id="58" parent="13" name="users_email_unique">
+    <column id="58" parent="13" name="updated_at">
+      <Position>9</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <index id="59" parent="13" name="users_email_unique">
       <ColNames>email</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="59" parent="13">
+    <key id="60" parent="13">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
