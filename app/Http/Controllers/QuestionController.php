@@ -101,4 +101,5 @@ class QuestionController extends Controller
         $question->delete();
         return redirect()->route('home')->with('message', 'Deleted');
     }
+
 }

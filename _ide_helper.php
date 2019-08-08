@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.8.30 on 2019-08-06 17:07:12.
+ * Generated for Laravel 5.8.31 on 2019-08-07 18:12:04.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -15773,18 +15773,6 @@ namespace Collective\Html {
  
 }
 
-namespace Intervention\Image { 
-
-    /**
-     * 
-     *
-     */ 
-    class ImageServiceProvider {
-         
-    }
- 
-}
-
 namespace Intervention\Image\Facades { 
 
     /**
@@ -18517,13 +18505,13 @@ namespace  {
             /**
              * Dump the current SQL and bindings.
              *
-             * @return void 
+             * @return \Illuminate\Database\Query\Builder 
              * @static 
              */ 
             public static function dump()
             {
                                 /** @var \Illuminate\Database\Query\Builder $instance */
-                                $instance->dump();
+                                return $instance->dump();
             }
          
             /**
@@ -18638,8 +18626,6 @@ namespace  {
     class Form extends \Collective\Html\FormFacade {}
 
     class Html extends \Collective\Html\HtmlFacade {}
-
-    class 0 extends \Intervention\Image\ImageServiceProvider {}
 
     class Image extends \Intervention\Image\Facades\Image {}
  

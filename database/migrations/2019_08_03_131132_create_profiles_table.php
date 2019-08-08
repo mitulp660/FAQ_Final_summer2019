@@ -22,6 +22,7 @@ class CreateProfilesTable extends Migration
             $table->longText('body')->nullable();
             $table->timestamps();
         });
+
     }
 
     /**
@@ -32,5 +33,6 @@ class CreateProfilesTable extends Migration
     public function down()
     {
         Schema::dropIfExists('profiles');
+
     }
 }

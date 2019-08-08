@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Profile;
 use App\User;
+use App\Http\Requests;
 
 //added for Image upload
 use Image;//image uploaded class
@@ -18,6 +19,10 @@ class ProfileController extends Controller
     public function index()
     {
         //
+        {
+            $users = \App\User::all();
+            return view('users.profile', compact($users));
+        }
     }
 
     /**
@@ -27,7 +32,7 @@ class ProfileController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function profile(){
-        return view('profile', array('user' => Auth::user()) );
+        return view('user', array('user' => Auth::user()) );
     }
     public function update_pic(Request $request){
         // Handle the user upload of pictures for profile
